@@ -11,7 +11,7 @@ function FallbackAvatar({ sizeClass = 'h-40 w-40', textClass = 'text-4xl' }) {
   );
 }
 
-export default function ProfileAvatar({ src, alt, sizeClass, textClass, position = 'center center' }) {
+export default function ProfileAvatar({ src, alt, sizeClass, textClass, imagePosition = 'center center' }) {
   const [hasError, setHasError] = useState(false);
 
   if (hasError || !src) {
@@ -23,7 +23,7 @@ export default function ProfileAvatar({ src, alt, sizeClass, textClass, position
       src={src}
       alt={alt}
       className={`${sizeClass} rounded-full border border-cyantech/60 object-cover shadow-card`}
-      style={{ objectFit: 'cover', objectPosition: position || 'center center' }}
+      style={{ objectPosition: imagePosition }}
       onError={() => setHasError(true)}
       loading="lazy"
     />

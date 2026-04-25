@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import About from './components/About';
 import Areas from './components/Areas';
+import BlueTeamLab from './components/BlueTeamLab';
 import CaseStudy from './components/CaseStudy';
 import Contact from './components/Contact';
 import Differentials from './components/Differentials';
@@ -50,10 +51,11 @@ export default function App() {
         <CaseStudy caseStudy={portfolioData.caseStudy} />
         <Education education={portfolioData.education} />
         <Projects projects={portfolioData.projects} />
+        <BlueTeamLab blueTeamLab={portfolioData.blueTeamLab} />
         <Methodology methodology={portfolioData.methodology} methodologyText={portfolioData.methodologyText} />
         <Differentials differentials={portfolioData.differentials} />
         <Indicators indicators={portfolioData.indicators} />
-        <Contact person={portfolioData.person} disclaimer={portfolioData.disclaimer} />
+        <Contact person={portfolioData.person} />
       </main>
       <Footer />
 

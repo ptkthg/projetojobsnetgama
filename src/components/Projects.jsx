@@ -4,14 +4,15 @@ export default function Projects({ projects }) {
   return (
     <section id="projetos" className="mx-auto max-w-6xl px-4 py-14 md:px-6">
       <SectionTitle title="Projetos técnicos" />
+      <p className="mb-8 max-w-3xl text-lightgray/90">
+        Projetos técnicos e estudos práticos voltados à investigação, detecção, resposta e melhoria de postura defensiva.
+      </p>
       <div className="grid gap-5 lg:grid-cols-2">
         {projects.map((project) => (
           <article
             key={project.title}
             className={`rounded-xl border bg-white/5 p-5 transition hover:-translate-y-1 ${
-              project.isMain
-                ? 'border-cyantech/70 ring-1 ring-electric/40'
-                : 'border-white/10 hover:border-cyantech/60'
+              project.isMain ? 'border-cyantech/70 ring-1 ring-electric/40' : 'border-white/10 hover:border-cyantech/60'
             }`}
           >
             <div className="flex items-start justify-between gap-3">

@@ -11,7 +11,7 @@ export const portfolioData = {
     whatsappUrl: 'https://wa.me/5521998031285',
     profileImagePath: '/assets/patrickseg.png',
     profileImageAlt: 'Patrick Thiago Rezende dos Santos',
-    profileImagePosition: 'center top',
+    profileImagePosition: 'center 28%',
     resumePath: '/assets/patrickcv0426.pdf',
   },
   heroDescription:
@@ -173,6 +173,107 @@ export const portfolioData = {
       scenarios: ['Usuários inativos', 'Contas órfãs', 'Acessos privilegiados', 'Permissões excessivas', 'Revisão periódica', 'Evidência de aprovação'],
     },
   ],
+  // Para adicionar novo app, copie um objeto abaixo e altere title, category, status, maturity, problem, description, stack, value e nextStep.
+  blueTeamLab: [
+    {
+      title: 'KQL Hunting Query Builder',
+      category: 'Threat Hunting',
+      status: 'Planejado',
+      maturity: 'Ideia',
+      problem:
+        'Analistas precisam criar consultas KQL rapidamente para investigar comportamentos suspeitos em endpoints, identidades e e-mails.',
+      description:
+        'Ferramenta para gerar consultas KQL a partir de cenários de investigação, como PowerShell suspeito, login anômalo, LOLBins, phishing, movimentação lateral e execução incomum de processos.',
+      stack: ['React', 'KQL Templates', 'Microsoft Defender XDR'],
+      value: 'Reduz tempo de criação de queries e padroniza hipóteses de hunting.',
+      nextStep: 'Criar biblioteca inicial de templates KQL por cenário.',
+    },
+    {
+      title: 'Security Log Triage Assistant',
+      category: 'SOC / Triagem',
+      status: 'Planejado',
+      maturity: 'Ideia',
+      problem: 'Logs de segurança costumam chegar sem contexto suficiente para priorização rápida.',
+      description:
+        'Aplicação para colar logs de Windows, Defender, firewall ou SIEM e receber uma leitura estruturada com evento, risco, hipótese, evidências e ação recomendada.',
+      stack: ['React', 'Parser de logs', 'Regras heurísticas'],
+      value: 'Acelera triagem inicial e melhora consistência na classificação de eventos.',
+      nextStep: 'Criar parser inicial para logs Windows Event ID 4688 e alertas Defender.',
+    },
+    {
+      title: 'Vulnerability Prioritization Dashboard',
+      category: 'Vulnerability Management',
+      status: 'Planejado',
+      maturity: 'Ideia',
+      problem: 'Nem toda vulnerabilidade crítica tem o mesmo risco real para o negócio.',
+      description:
+        'Dashboard para priorizar vulnerabilidades considerando criticidade, exposição, ativo afetado, impacto no negócio, exploração conhecida, facilidade de correção e recorrência.',
+      stack: ['React', 'Scoring Model', 'Dashboard'],
+      value: 'Ajuda a transformar listas extensas de vulnerabilidades em plano de ação priorizado.',
+      nextStep: 'Criar modelo de pontuação e exemplo com dados fictícios.',
+    },
+    {
+      title: 'Incident Report Generator',
+      category: 'Incident Response',
+      status: 'Planejado',
+      maturity: 'Ideia',
+      problem: 'Relatórios de incidente precisam ser consistentes, objetivos e úteis para áreas técnicas e gestão.',
+      description:
+        'Ferramenta para estruturar relatórios com resumo executivo, linha do tempo, evidências, causa raiz, impacto, contenção, erradicação, recuperação e recomendações.',
+      stack: ['React', 'Templates', 'Exportação PDF'],
+      value: 'Padroniza documentação pós-incidente e reduz retrabalho.',
+      nextStep: 'Criar template inicial baseado em fluxo de resposta a incidentes.',
+    },
+    {
+      title: 'Blue Team Controls Tracker',
+      category: 'GRC / Controles',
+      status: 'Planejado',
+      maturity: 'Ideia',
+      problem: 'Controles defensivos precisam de acompanhamento claro de status, evidência, prioridade e responsável.',
+      description:
+        'Aplicação para acompanhar controles baseados em NIST CSF, CIS Controls e MITRE ATT&CK, com status, evidências, responsáveis, prioridade e observações.',
+      stack: ['React', 'Checklist dinâmico', 'Dashboard'],
+      value: 'Melhora visibilidade de postura defensiva e facilita acompanhamento de melhorias.',
+      nextStep: 'Criar estrutura inicial de controles e status.',
+    },
+    {
+      title: 'IoC Operations Converter',
+      category: 'Threat Intelligence',
+      status: 'Planejado',
+      maturity: 'Ideia',
+      problem: 'IoCs precisam ser organizados antes de virarem ação operacional em Defender, SIEM ou firewall.',
+      description:
+        'Ferramenta para organizar IPs, domínios, hashes e URLs, classificando por tipo, severidade, fonte, expiração e ação sugerida.',
+      stack: ['React', 'CSV/JSON Export', 'IoC Normalization'],
+      value: 'Facilita uso operacional de indicadores e reduz erro manual.',
+      nextStep: 'Criar normalizador básico de IoCs e exportação CSV.',
+    },
+    {
+      title: 'Defender Secure Score Action Planner',
+      category: 'Security Posture',
+      status: 'Planejado',
+      maturity: 'Ideia',
+      problem:
+        'Recomendações de postura de segurança precisam ser agrupadas por prioridade, esforço e área responsável.',
+      description:
+        'Aplicação para organizar recomendações do Microsoft Defender por impacto, severidade, produto, categoria, ativos afetados, quick wins e projetos estruturais.',
+      stack: ['React', 'CSV Import', 'Prioritization Matrix'],
+      value: 'Transforma recomendações técnicas em plano de ação claro para gestão e operação.',
+      nextStep: 'Criar importação de CSV exportado do Defender.',
+    },
+    {
+      title: 'IAM Access Review Helper',
+      category: 'IAM / Governança de Acessos',
+      status: 'Planejado',
+      maturity: 'Ideia',
+      problem: 'Revisões de acesso precisam evidenciar privilégios excessivos, contas órfãs e exceções.',
+      description:
+        'Ferramenta para apoiar revisão de acessos com foco em menor privilégio, grupos sensíveis, contas com privilégio local e evidências de revisão.',
+      stack: ['React', 'CSV Import', 'Access Review Checklist'],
+      value: 'Ajuda a organizar evidências e reduzir risco de excesso de privilégio.',
+      nextStep: 'Criar modelo fictício de revisão de acessos.',
+    },
+  ],
   caseStudy: {
     title: 'Estudo de Caso',
     subtitle: 'Resposta a incidente com Microsoft Defender',
@@ -232,8 +333,6 @@ export const portfolioData = {
     'Sustentação de controles de backup, inventário e hardening.',
     'Ajuste de regras para redução de falsos positivos.',
   ],
-  disclaimer:
-    'Todos os projetos e estudos de caso apresentados neste portfólio utilizam dados públicos, fictícios, simulados, resumidos ou anonimizados. Nenhuma informação sensível, corporativa ou de terceiros é exposta.',
 };
 
 export const navItems = [
@@ -244,5 +343,6 @@ export const navItems = [
   { label: 'Experiência', id: 'experiencia' },
   { label: 'Estudo de Caso', id: 'estudo-caso' },
   { label: 'Projetos', id: 'projetos' },
+  { label: 'Blue Team Lab', id: 'blue-team-lab' },
   { label: 'Contato', id: 'contato' },
 ];
