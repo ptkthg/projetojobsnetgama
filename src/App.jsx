@@ -39,7 +39,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="app-bg min-h-screen bg-deep text-white">
+    <div className="min-h-screen bg-gradient-to-b from-navy via-[#112241] to-navy text-white">
       <Header />
       <main>
         <Hero person={portfolioData.person} heroDescription={portfolioData.heroDescription} hasResume={hasResume} />
