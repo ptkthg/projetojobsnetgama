@@ -1,0 +1,12 @@
+Finalizei uma nova versão do meu portfólio profissional em Segurança da Informação, com foco em Blue Team, SOC, Threat Hunting, resposta a incidentes, gestão de vulnerabilidades, GRC e governança de acessos.
+
+Além da minha trajetória e stack técnica, adicionei uma seção chamada Blue Team Lab, onde organizo ideias de ferramentas e automações que pretendo desenvolver para apoiar tarefas do dia a dia em segurança defensiva.
+
+Entre os projetos planejados estão gerador de queries KQL, analisador de logs, priorizador de vulnerabilidades, gerador de relatórios de incidente, tracker de controles defensivos, conversor operacional de IoCs e apoio para revisão de acessos.
+
+A proposta é transformar processos repetitivos em soluções simples, úteis e reutilizáveis para operação de segurança.
+
+Portfólio:
+INSERIR_LINK_DA_VERCEL_AQUI
+
+#SegurançaDaInformação #BlueTeam #SOC #ThreatHunting #MicrosoftDefender #CyberSecurity #GRC #IAM #VulnerabilityManagement
