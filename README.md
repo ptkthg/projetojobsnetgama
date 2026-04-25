@@ -58,3 +58,10 @@ public/
 Use GitHub Actions com build Vite e publique a pasta `dist`.
 
 > Todos os projetos apresentados no portfólio devem utilizar dados fictícios, simulados ou anonimizados.
+
+
+## Atualizações incrementais
+
+- Identidade visual Blue Team atualizada com paleta técnica e grid discreto.
+- Nova seção **Estudo de Caso** com resposta a incidente em Microsoft Defender.
+- Dados de contato reais atualizados (LinkedIn/GitHub) e botão discreto de WhatsApp sem exibir número em texto aberto.
