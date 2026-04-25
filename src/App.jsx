@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import About from './components/About';
 import Areas from './components/Areas';
+import CaseStudy from './components/CaseStudy';
 import Contact from './components/Contact';
 import Differentials from './components/Differentials';
 import Education from './components/Education';
@@ -46,6 +47,7 @@ export default function App() {
         <Areas areas={portfolioData.areas} />
         <TechStack techStack={portfolioData.techStack} />
         <Experience experiences={portfolioData.experiences} />
+        <CaseStudy caseStudy={portfolioData.caseStudy} />
         <Education education={portfolioData.education} />
         <Projects projects={portfolioData.projects} />
         <Methodology methodology={portfolioData.methodology} methodologyText={portfolioData.methodologyText} />
@@ -59,7 +61,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-5 right-5 rounded-full border border-lightblue/70 bg-navy/90 p-3 text-lightblue transition hover:bg-midblue"
+          className="fixed bottom-5 right-5 rounded-full border border-cyantech/70 bg-deep/90 p-3 text-cyantech transition hover:bg-blueteam"
           aria-label="Voltar ao topo"
         >
           ↑

@@ -7,7 +7,7 @@ export default function Methodology({ methodology, methodologyText }) {
       <ol className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
         {methodology.map((step, index) => (
           <li key={step} className="rounded-xl border border-white/10 bg-white/5 p-4 text-lightgray">
-            <span className="text-lightblue">{index + 1}. </span>
+            <span className="text-cyantech">{index + 1}. </span>
             {step}
           </li>
         ))}

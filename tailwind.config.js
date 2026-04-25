@@ -4,14 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        navy: '#0B172A',
-        midblue: '#1E3A8A',
-        lightblue: '#38BDF8',
+        deep: '#020617',
+        blueteam: '#0F3D91',
+        cyantech: '#38BDF8',
+        electric: '#2563EB',
+        graydark: '#111827',
         lightgray: '#E5E7EB',
         softgreen: '#22C55E',
+        alertred: '#EF4444',
       },
       boxShadow: {
-        card: '0 10px 30px rgba(11, 23, 42, 0.25)',
+        card: '0 15px 35px rgba(2, 6, 23, 0.45)',
       },
     },
   },
