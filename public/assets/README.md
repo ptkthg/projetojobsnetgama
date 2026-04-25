@@ -1,3 +1,3 @@
-Adicione aqui os arquivos:
-- profile.jpg
-- curriculo-patrick-thiago.pdf
+Adicione aqui os arquivos públicos do portfólio:
+- patrickseg.png
+- patrickcv0426.pdf

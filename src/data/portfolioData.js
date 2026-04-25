@@ -9,8 +9,10 @@ export const portfolioData = {
     github: 'https://github.com/ptkthg',
     // Expor link direto de WhatsApp em site público é uma decisão consciente.
     whatsappUrl: 'https://wa.me/5521998031285',
-    profileImagePath: '/assets/profile.jpg',
-    resumePath: '/assets/curriculo-patrick-thiago.pdf',
+    profileImagePath: '/assets/patrickseg.png',
+    profileImageAlt: 'Patrick Thiago Rezende dos Santos',
+    profileImagePosition: 'center top',
+    resumePath: '/assets/patrickcv0426.pdf',
   },
   heroDescription:
     'Profissional de Segurança da Informação com atuação prática em monitoramento de ameaças, resposta a incidentes, gestão de vulnerabilidades, governança de acessos e sustentação de controles de segurança.',
@@ -132,6 +134,7 @@ export const portfolioData = {
     institution: 'Universidade Estácio de Sá, UNESA',
     status: 'Cursando',
   },
+  // Para adicionar novo projeto, copie um objeto abaixo e altere title, description, skills e scenarios.
   projects: [
     {
       title: 'Microsoft Defender XDR Hunting Pack',

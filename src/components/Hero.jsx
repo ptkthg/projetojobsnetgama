@@ -42,7 +42,7 @@ export default function Hero({ person, heroDescription, hasResume }) {
             Estudo de caso
           </a>
           {hasResume ? (
-            <a href={person.resumePath} className="rounded-lg border border-cyantech px-5 py-2.5 text-lightgray transition hover:bg-white/10" download>
+            <a href={person.resumePath} target="_blank" rel="noreferrer" className="rounded-lg border border-cyantech px-5 py-2.5 text-lightgray transition hover:bg-white/10">
               Baixar currículo
             </a>
           ) : (
@@ -59,7 +59,7 @@ export default function Hero({ person, heroDescription, hasResume }) {
         </div>
       </div>
       <div className="grid content-start gap-5 place-items-center">
-        <ProfileAvatar src={person.profileImagePath} alt={person.fullName} sizeClass="h-52 w-52 md:h-64 md:w-64" textClass="text-5xl" />
+        <ProfileAvatar src={person.profileImagePath} alt={person.profileImageAlt || person.fullName} sizeClass="h-52 w-52 md:h-64 md:w-64" textClass="text-5xl" position={person.profileImagePosition || 'center center'} />
         <HeroBlueTeamVisual />
       </div>
     </section>
