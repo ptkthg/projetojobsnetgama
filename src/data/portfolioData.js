@@ -11,7 +11,7 @@ export const portfolioData = {
     whatsappUrl: 'https://wa.me/5521998031285',
     profileImagePath: '/assets/patrickseg.png',
     profileImageAlt: 'Patrick Thiago Rezende dos Santos',
-    profileImagePosition: 'center 18%',
+    profileImagePosition: 'center 28%',
     resumePath: '/assets/patrickcv0426.pdf',
   },
   heroDescription:
@@ -143,6 +143,15 @@ export const portfolioData = {
         'Coleção de consultas e cenários de threat hunting voltados para identificação de comportamentos suspeitos em endpoint, identidade e e-mail.',
       skills: ['KQL', 'Microsoft Defender XDR', 'Threat Hunting', 'MITRE ATT&CK', 'Análise de comportamento', 'Resposta a incidentes'],
       scenarios: ['Password spray', 'Sucesso após múltiplas falhas de login', 'PowerShell suspeito', 'Outlook criando processos anômalos', 'LOLBins', 'Transferência incomum de arquivos'],
+      details: {
+        where:
+          'Principalmente na Oceânica, dentro da rotina de Segurança da Informação e Blue Team, usando o Microsoft Defender XDR como base para investigação, análise de alertas e criação de consultas.',
+        how:
+          'Desenvolvi e adaptei consultas KQL para investigar comportamentos suspeitos em endpoints, identidades e e-mails, cobrindo cenários como PowerShell suspeito, LOLBins, password spray, Outlook criando processos anômalos e transferências incomuns.',
+        why: 'Foi criado para reduzir o tempo de triagem e evitar que cada investigação começasse do zero.',
+        purpose:
+          'Serviu para transformar hipóteses de ataque em consultas práticas, reutilizáveis e voltadas para investigação no Defender XDR.',
+      },
     },
     {
       title: 'Priorização de Hardening com Secure Score',
@@ -150,6 +159,15 @@ export const portfolioData = {
         'Modelo de priorização de recomendações de segurança com base em severidade, impacto, esforço de implementação, ativos afetados e evidências necessárias.',
       skills: ['Microsoft Defender', 'Secure Score', 'Hardening', 'Gestão de risco', 'Controles de segurança', 'Relatórios executivos'],
       scenarios: ['LSA Protection', 'Network Protection', 'AutoRun/AutoPlay', 'NLA em RDP', 'LDAP Signing', 'ASR Rules'],
+      details: {
+        where:
+          'Na Oceânica, durante o acompanhamento de recomendações do Microsoft Defender, Secure Score, postura de segurança e controles de hardening.',
+        how:
+          'Organizei recomendações por severidade, impacto, esforço de implementação, ativos afetados, status e evidências, envolvendo controles como LSA Protection, Network Protection, AutoRun/AutoPlay, NLA em RDP, LDAP Signing, ASR Rules, GPO e Intune.',
+        why: 'Foi feito porque as recomendações precisavam sair de uma lista técnica e virar um plano de ação priorizado.',
+        purpose:
+          'Serviu para separar quick wins, mudanças estruturais, exceções justificadas e evidências de implementação, facilitando comunicação técnica e executiva.',
+      },
     },
     {
       title: 'Correlação entre WAF, ASM e Risco Web',
@@ -157,6 +175,16 @@ export const portfolioData = {
         'Análise de exposição externa combinando achados de Attack Surface Management com eventos de WAF e riscos de segurança em aplicações web.',
       skills: ['WAF', 'ASM', 'OWASP Top 10', 'Segurança web', 'Análise de risco', 'Recomendação técnica'],
       scenarios: ['Ausência de HSTS', 'Ausência de CSP', 'HTTP sem redirecionamento para HTTPS', 'Ausência de X-Frame-Options', 'Ausência de X-Content-Type-Options', 'Tentativas de SQL Injection e XSS'],
+      details: {
+        where:
+          'Na Oceânica, em análises envolvendo exposição externa, Attack Surface Management, eventos de WAF Imperva e riscos em aplicações web.',
+        how:
+          'Correlacionei achados de ASM com eventos do WAF, avaliando ausência de headers de segurança, HTTP sem redirecionamento para HTTPS, ausência de HSTS, CSP, X-Frame-Options, X-Content-Type-Options e tentativas de SQL Injection, XSS e fuzzing.',
+        why:
+          'Foi feito para mostrar que achados de exposição externa e ataques observados no WAF tinham impacto real no risco das aplicações.',
+        purpose:
+          'Serviu para apoiar priorização de correções, comunicação com áreas responsáveis e redução da superfície de ataque web.',
+      },
     },
     {
       title: 'Relatório Pós-Incidente de Endpoint',
@@ -164,6 +192,16 @@ export const portfolioData = {
         'Modelo de relatório pós-incidente com linha do tempo, evidências técnicas, hipótese de ataque, impacto, contenção, erradicação e lições aprendidas.',
       skills: ['Resposta a incidentes', 'Análise de logs', 'Processo pai-filho', 'Coleta de evidências', 'Comunicação executiva', 'Documentação técnica'],
       scenarios: ['Alerta de endpoint', 'Execução suspeita', 'Análise de cadeia de processos', 'Contenção', 'Recomendações pós-incidente'],
+      details: {
+        where:
+          'Na Oceânica, a partir de investigações de alertas de endpoint, eventos suspeitos e necessidade de documentar incidentes com evidências.',
+        how:
+          'Criei um modelo com resumo executivo, escopo, linha do tempo, evidências técnicas, hipótese de ataque, impacto, contenção, erradicação, recuperação, causa raiz e recomendações.',
+        why:
+          'Foi feito para evitar relatórios soltos, subjetivos ou técnicos demais, criando uma estrutura clara para gestão e operação.',
+        purpose:
+          'Serviu para registrar decisões, evidências, aprendizado pós-incidente e ações preventivas para reduzir recorrência.',
+      },
     },
     {
       title: 'Modelo de Governança de Acessos',
@@ -171,6 +209,16 @@ export const portfolioData = {
         'Modelo de revisão de acessos com foco em menor privilégio, contas inativas, permissões excessivas, trilhas de auditoria e conformidade.',
       skills: ['IAM', 'Active Directory', 'Entra ID', 'Governança de acessos', 'Menor privilégio', 'Auditoria'],
       scenarios: ['Usuários inativos', 'Contas órfãs', 'Acessos privilegiados', 'Permissões excessivas', 'Revisão periódica', 'Evidência de aprovação'],
+      details: {
+        where:
+          'Principalmente na Oceânica, com base em rotinas de revisão de permissões, Active Directory, Microsoft Entra ID, grupos sensíveis e evidências. Vortex e Rio Quality contribuíram como base operacional em suporte, acessos e troubleshooting.',
+        how:
+          'Organizei um modelo para identificar usuários inativos, contas órfãs, permissões excessivas, acessos privilegiados, grupos sensíveis, exceções e evidências de aprovação.',
+        why:
+          'Foi feito para reduzir excesso de privilégio e dar mais rastreabilidade ao processo de concessão e revisão de acessos.',
+        purpose:
+          'Serviu para conectar governança, segurança e operação, fortalecendo auditoria, menor privilégio e controle de permissões.',
+      },
     },
   ],
   // Para adicionar novo app, copie um objeto abaixo e altere title, category, status, maturity, problem, description, stack, value e nextStep.
