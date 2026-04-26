@@ -1,23 +1,12 @@
-Finalizei uma nova versão do meu portfólio profissional em Segurança da Informação, com foco em Blue Team, SOC, Threat Hunting, resposta a incidentes, gestão de vulnerabilidades e governança de acessos.
+Finalizei uma nova versão do meu portfólio profissional em Segurança da Informação, com foco em Blue Team, SOC, Threat Hunting, resposta a incidentes, gestão de vulnerabilidades, GRC e governança de acessos.
 
-O material reúne minha trajetória, stack técnica, projetos práticos e um estudo de caso envolvendo Microsoft Defender, com foco em detecção, contenção, análise de causa raiz e melhoria contínua dos controles de segurança.
+Também adicionei uma seção chamada Blue Team Lab, onde começo a organizar ideias de ferramentas práticas para apoiar a operação defensiva.
 
-A ideia foi criar um espaço mais objetivo para apresentar minha atuação técnica, minha forma de pensar segurança defensiva e os tipos de problema que venho estudando e resolvendo na prática.
+O primeiro projeto planejado é o IOC Enricher: um mini app para receber IPs, domínios, URLs ou hashes e retornar um painel de enriquecimento com reputação, contexto técnico, classificação de risco e recomendação operacional.
 
-Portfólio:
-INSERIR_LINK_DA_VERCEL_AQUI
-
-#SegurançaDaInformação #BlueTeam #SOC #ThreatHunting #MicrosoftDefender #CyberSecurity #GRC #IAM #VulnerabilityManagement
-
----
-
-Versão curta:
-
-Atualizei meu portfólio profissional em Segurança da Informação, com foco em Blue Team, SOC, Threat Hunting, Microsoft Defender, resposta a incidentes e gestão de vulnerabilidades.
-
-O portfólio reúne minha trajetória, stack técnica, projetos e um estudo de caso prático voltado à detecção, contenção e melhoria contínua de controles defensivos.
+A proposta é transformar a triagem de indicadores em um processo mais rápido, padronizado e útil para Blue Team, SOC e Threat Intelligence.
 
 Portfólio:
 INSERIR_LINK_DA_VERCEL_AQUI
 
-#SegurançaDaInformação #BlueTeam #SOC #MicrosoftDefender #CyberSecurity
+#SegurançaDaInformação #BlueTeam #SOC #ThreatIntelligence #ThreatHunting #CyberSecurity #MicrosoftDefender #GRC #IAM

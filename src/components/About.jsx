@@ -12,7 +12,7 @@ export default function About({ aboutText, person }) {
           ))}
         </div>
         <div className="hidden md:block">
-          <ProfileAvatar src={person.profileImagePath} alt={person.profileImageAlt || person.fullName} sizeClass="h-40 w-40" textClass="text-4xl" position={person.profileImagePosition || 'center center'} />
+          <ProfileAvatar src={person.profileImagePath} alt={person.profileImageAlt || person.fullName} sizeClass="h-40 w-40" textClass="text-4xl" imagePosition={person.profileImagePosition} />
         </div>
       </div>
     </section>

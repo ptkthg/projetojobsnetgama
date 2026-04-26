@@ -11,7 +11,7 @@ export const portfolioData = {
     whatsappUrl: 'https://wa.me/5521998031285',
     profileImagePath: '/assets/patrickseg.png',
     profileImageAlt: 'Patrick Thiago Rezende dos Santos',
-    profileImagePosition: 'center top',
+    profileImagePosition: 'center 28%',
     resumePath: '/assets/patrickcv0426.pdf',
   },
   heroDescription:
@@ -173,6 +173,33 @@ export const portfolioData = {
       scenarios: ['Usuários inativos', 'Contas órfãs', 'Acessos privilegiados', 'Permissões excessivas', 'Revisão periódica', 'Evidência de aprovação'],
     },
   ],
+  // Para adicionar novo app, copie um objeto abaixo e altere title, category, status, maturity, problem, description, stack, value e nextStep.
+  blueTeamLab: [
+    {
+      title: 'IOC Enricher',
+      subtitle: 'Enriquecimento de indicadores para triagem Blue Team',
+      category: 'Threat Intelligence / SOC',
+      status: 'Planejado',
+      maturity: 'Ideia em validação',
+      problem:
+        'Analistas de segurança precisam enriquecer indicadores rapidamente para decidir se devem bloquear, monitorar, investigar ou ignorar um artefato suspeito.',
+      description:
+        'Mini app que recebe IP, domínio, URL ou hash e retorna um painel de enriquecimento com informações de reputação, contexto técnico, classificação de risco e recomendação operacional.',
+      stack: ['React', 'APIs OSINT', 'Threat Intelligence', 'CSV/PDF Export'],
+      value:
+        'Reduz o tempo de triagem de indicadores e ajuda o Blue Team a transformar IoCs soltos em decisão operacional.',
+      nextStep:
+        'Construir um MVP com entrada de indicador, painel de reputação, classificação de risco e exportação de relatório.',
+      features: [
+        'Receber IP, domínio, URL ou hash como entrada.',
+        'Consultar reputação em fontes abertas.',
+        'Classificar risco como baixo, médio, alto ou crítico.',
+        'Exibir ASN, país, categoria, data de criação do domínio e histórico básico.',
+        'Gerar recomendação operacional: bloquear, monitorar, investigar ou ignorar.',
+        'Exportar relatório em PDF ou CSV.',
+      ],
+    },
+  ],
   caseStudy: {
     title: 'Estudo de Caso',
     subtitle: 'Resposta a incidente com Microsoft Defender',
@@ -232,8 +259,6 @@ export const portfolioData = {
     'Sustentação de controles de backup, inventário e hardening.',
     'Ajuste de regras para redução de falsos positivos.',
   ],
-  disclaimer:
-    'Todos os projetos e estudos de caso apresentados neste portfólio utilizam dados públicos, fictícios, simulados, resumidos ou anonimizados. Nenhuma informação sensível, corporativa ou de terceiros é exposta.',
 };
 
 export const navItems = [
@@ -244,5 +269,6 @@ export const navItems = [
   { label: 'Experiência', id: 'experiencia' },
   { label: 'Estudo de Caso', id: 'estudo-caso' },
   { label: 'Projetos', id: 'projetos' },
+  { label: 'Blue Team Lab', id: 'blue-team-lab' },
   { label: 'Contato', id: 'contato' },
 ];

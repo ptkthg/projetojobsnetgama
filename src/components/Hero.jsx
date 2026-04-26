@@ -59,7 +59,7 @@ export default function Hero({ person, heroDescription, hasResume }) {
         </div>
       </div>
       <div className="grid content-start gap-5 place-items-center">
-        <ProfileAvatar src={person.profileImagePath} alt={person.profileImageAlt || person.fullName} sizeClass="h-52 w-52 md:h-64 md:w-64" textClass="text-5xl" position={person.profileImagePosition || 'center center'} />
+        <ProfileAvatar src={person.profileImagePath} alt={person.profileImageAlt || person.fullName} sizeClass="h-52 w-52 md:h-64 md:w-64" textClass="text-5xl" imagePosition={person.profileImagePosition} />
         <HeroBlueTeamVisual />
       </div>
     </section>

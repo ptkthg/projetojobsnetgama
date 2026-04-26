@@ -1,6 +1,6 @@
 # Portfólio Profissional — Patrick Thiago Rezende dos Santos
 
-Site em React + Vite + Tailwind para apresentação profissional em Segurança da Informação (Blue Team, SOC, Threat Hunting, IAM, GRC, vulnerabilidades e resposta a incidentes).
+Portfólio profissional em React + Vite + Tailwind com foco em Blue Team, SOC, Threat Hunting, Microsoft Defender, resposta a incidentes, gestão de vulnerabilidades, GRC e IAM.
 
 ## Stack
 
@@ -8,135 +8,103 @@ Site em React + Vite + Tailwind para apresentação profissional em Segurança d
 - Vite
 - Tailwind CSS
 
-## Como executar localmente
+## Scripts
 
 ```bash
 npm install
 npm run dev
-```
-
-Aplicação em: `http://localhost:5173`
-
-## Build para produção
-
-```bash
 npm run build
 npm run preview
 ```
-
-## Estrutura principal
-
-```text
-src/
-  components/
-  data/
-  App.jsx
-  main.jsx
-  index.css
-public/
-  assets/
-```
-
----
 
 ## Como adicionar o currículo manualmente
 
 1. Pegue o arquivo PDF do currículo.
 2. Renomeie para: `patrickcv0426.pdf`
-3. Coloque o arquivo nesta pasta: `public/assets/`
-4. O caminho final deve ser: `public/assets/patrickcv0426.pdf`
-5. No código, o caminho usado deve ser: `'/assets/patrickcv0426.pdf'`
-6. Rode:
-   ```bash
-   npm run dev
-   ```
-7. Confira se o botão **Baixar currículo** abre o PDF.
-8. Depois faça commit no GitHub Desktop com:
-   - Summary: `add: adiciona currículo em PDF`
-   - Description: `Adiciona currículo em PDF aos assets públicos do portfólio.`
+3. Coloque em: `public/assets/`
+4. Caminho final no projeto: `public/assets/patrickcv0426.pdf`
+5. No código use: `'/assets/patrickcv0426.pdf'`
+6. Rode `npm run dev` e teste o botão **Baixar currículo**.
 
-> Em projetos Vite, arquivos dentro de `public/` são servidos a partir da raiz do site.  
-> Portanto, no código use `'/assets/arquivo.ext'` (e não `'/public/assets/arquivo.ext'`).
-
----
+> Em Vite, arquivos dentro de `public/` são servidos a partir da raiz do site. Use `/assets/...` no código (não use `/public/assets/...`).
 
 ## Como trocar a foto de perfil
 
 1. Coloque a nova imagem em: `public/assets/`
-2. Atualize em: `src/data/portfolioData.js`
+2. Edite: `src/data/portfolioData.js`
 3. Troque:
-   ```js
-   profileImagePath: '/assets/patrickseg.png'
-   ```
-   por:
-   ```js
-   profileImagePath: '/assets/NOME-DA-NOVA-FOTO.png'
-   ```
-4. Se a foto ficar mal enquadrada, ajuste `profileImagePosition`.
+
+```js
+profileImagePath: '/assets/patrickseg.png'
+```
+
+por:
+
+```js
+profileImagePath: '/assets/NOME-DA-NOVA-FOTO.png'
+```
+
+4. Para ajustar enquadramento, altere `profileImagePosition`.
 
 Exemplos:
 
 ```js
 profileImagePosition: 'center center'
+profileImagePosition: 'center 28%'
 profileImagePosition: 'center top'
-profileImagePosition: 'center 35%'
 ```
-
-`profileImagePosition` controla o enquadramento da foto sem precisar editar o componente.
-
----
 
 ## Como publicar na Vercel
 
 1. Entrar na Vercel.
-2. Fazer login com GitHub.
-3. Importar o repositório.
-4. Conferir se o framework foi detectado como **Vite**.
-5. Usar:
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-6. Clicar em **Deploy**.
-7. Copiar o link público.
-8. Colocar esse link no LinkedIn.
-
----
+2. Login com GitHub.
+3. Clicar em **Add New Project**.
+4. Importar o repositório.
+5. Framework Preset: **Vite**.
+6. Build Command: `npm run build`.
+7. Output Directory: `dist`.
+8. Deploy.
+9. Copiar URL pública.
 
 ## Como adicionar o portfólio no LinkedIn
 
-1. Publique o site na Vercel.
-2. Copie o link público.
-3. No LinkedIn, adicione o link em **Informações de contato** como site.
-4. Adicione também o link na seção **Destaques**.
-5. Use um título profissional, por exemplo:
-   - `Portfólio | Segurança da Informação | Blue Team`
+1. Copiar o link público da Vercel.
+2. Entrar no LinkedIn.
+3. Ir no perfil.
+4. Adicionar o link em Informações de contato como Website/Site.
+5. Adicionar também em Destaques/Featured (se disponível).
+6. Usar título: `Portfólio | Segurança da Informação | Blue Team`.
 
----
+## Como adicionar novos projetos ao Blue Team Lab
 
-## Como adicionar novos projetos
+No momento, o Blue Team Lab mantém apenas o **IOC Enricher** como primeiro projeto planejado.
 
-Os projetos ficam em: `src/data/portfolioData.js` (array `projects`).
+Para adicionar novos projetos no futuro, edite:
 
-Para adicionar um novo projeto, copie um objeto dentro do array `projects` e altere `title`, `description`, `skills` e `scenarios`.
+`src/data/portfolioData.js`
 
-Exemplo:
+E adicione novos objetos no array:
+
+`blueTeamLab`
+
+Modelo:
 
 ```js
 {
-  title: 'Nome do Projeto',
-  description: 'Descrição curta explicando o problema, a solução e o valor defensivo.',
-  skills: ['KQL', 'Microsoft Defender XDR', 'Threat Hunting', 'MITRE ATT&CK'],
-  scenarios: [
-    'Cenário investigado',
-    'Técnica ou comportamento analisado',
-    'Resultado ou aprendizado'
-  ]
+  title: 'Nome do App',
+  category: 'SOC / Blue Team',
+  status: 'Planejado',
+  maturity: 'Ideia',
+  problem: 'Problema que o app resolve.',
+  description: 'Descrição objetiva da solução.',
+  stack: ['React', 'API', 'Dashboard'],
+  value: 'Valor prático para operação de segurança.',
+  nextStep: 'Próximo passo de desenvolvimento.'
 }
 ```
 
----
-
 ## Observações
 
-- Se `public/assets/patrickcv0426.pdf` ainda não existir, o botão de currículo ficará desabilitado com mensagem discreta.
-- Se a foto `public/assets/patrickseg.png` não existir ou falhar, o site usa fallback com avatar `PT`.
-- Todos os projetos e estudos de caso apresentados no portfólio utilizam dados públicos, fictícios, simulados, resumidos ou anonimizados.
+- Se `public/assets/patrickcv0426.pdf` não existir, o botão de currículo fica desabilitado com “Currículo em breve”.
+- Se `public/assets/patrickseg.png` não existir ou falhar, o fallback `PT` é exibido.
+- O projeto está pronto para publicação na Vercel (output em `dist`).
