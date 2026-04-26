@@ -11,7 +11,7 @@ export const portfolioData = {
     whatsappUrl: 'https://wa.me/5521998031285',
     profileImagePath: '/assets/patrickseg.png',
     profileImageAlt: 'Patrick Thiago Rezende dos Santos',
-    profileImagePosition: 'center 28%',
+    profileImagePosition: 'center 18%',
     resumePath: '/assets/patrickcv0426.pdf',
   },
   heroDescription:
